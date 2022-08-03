@@ -8,6 +8,7 @@ export default function App() {
     <>
       {token && <Home />}
       {!token && <Login />}
+      <p>Token: {JSON.stringify(token)}</p>
     </>
   );
 }
